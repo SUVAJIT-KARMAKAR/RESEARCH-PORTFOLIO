@@ -1,4 +1,5 @@
-/* src > components > Banner > Banner.modules.css */
+/* src/components/Banner/Banner.modules.css */
+
 .banner {
     min-height: 90vh;
     margin: 50px auto;
@@ -8,6 +9,14 @@
     justify-content: space-between;
     max-width: 1800px;
     gap: 4rem;
+    opacity: 0;
+    transform: translateY(-50px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.banner.animate {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .banner .banner-image {
@@ -20,7 +29,14 @@
 }
 
 .banner .banner-image img {
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    opacity: 0;
+    transform: translateY(-30px);
+    transition: opacity 1s ease-out 0.2s, transform 1s ease-out 0.2s;
+}
+
+.banner.animate .banner-image img {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .banner .banner-header {
@@ -36,12 +52,30 @@
     word-wrap: break-word;
     margin-bottom: 0.5rem;
     line-height: 1.2;
+    opacity: 0;
+    transform: translateY(-30px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.banner.animate .banner-header h1 {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0.4s;
 }
 
 .banner .banner-header .secondary-header {
     color: var(--primary-color);
     font-size: clamp(1.2rem, 1.1vw, 1.8rem);
     margin-bottom: 1.5rem;
+    opacity: 0;
+    transform: translateY(-30px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.banner.animate .banner-header .secondary-header {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0.6s;
 }
 
 .banner .banner-header .banner-description {
@@ -49,6 +83,15 @@
     max-width: 100%;
     line-height: 1.8;
     font-size: 1.1rem;
+    opacity: 0;
+    transform: translateY(-30px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.banner.animate .banner-header .banner-description {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0.8s;
 }
 
 .banner .banner-header .banner-links {
@@ -64,6 +107,39 @@
     color: inherit;
     text-decoration: none;
     transition: transform 0.3s ease, color 0.3s ease;
+    opacity: 0;
+    transform: translateY(-30px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.banner.animate .banner-header .banner-links a:nth-child(1) {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 1s;
+}
+
+.banner.animate .banner-header .banner-links a:nth-child(2) {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 1.2s;
+}
+
+.banner.animate .banner-header .banner-links a:nth-child(3) {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 1.4s;
+}
+
+.banner.animate .banner-header .banner-links a:nth-child(4) {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 1.6s;
+}
+
+.banner.animate .banner-header .banner-links a:nth-child(5) {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 1.8s;
 }
 
 /* For larger desktop screens */
@@ -79,10 +155,10 @@
         object-fit: cover;
     }
 
-    .banner .banner-links { 
+    .banner .banner-header .banner-links { 
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: flex-start;
     }
 }
 
@@ -101,7 +177,7 @@
         object-fit: cover;
     }
 
-    .banner .banner-links { 
+    .banner .banner-header .banner-links { 
         display: flex;
         align-items: center;
         justify-content: center;
@@ -123,10 +199,6 @@
         max-width: 600px;
     }
 
-    .banner .banner-header .banner-links {
-        justify-content: center;
-    }
-
     .banner .banner-image img {
         width: 350px;
         height: 350px;
@@ -134,7 +206,7 @@
         object-fit: cover;
     }
 
-    .banner .banner-links { 
+    .banner .banner-header .banner-links { 
         display: flex;
         align-items: center;
         justify-content: center;
@@ -162,24 +234,18 @@
         aspect-ratio: 1/1; 
     }
 
-    .banner .banner-header .banner-links {
-        flex-wrap: wrap;
-        gap: 20px;
-    }
-
     .banner .banner-header .banner-description {
         font-size: 0.9rem;
     }
 
-    .banner .banner-links { 
+    .banner .banner-header .banner-links { 
         display: flex;
         align-items: center;
         justify-content: center;
     }
 }
 
-
-/* Hover-animations */
+/* Hover animations */
 @media (hover: hover) {
     .banner .banner-image img:hover {
         transform: translateY(-10px) scale(1.05); 
