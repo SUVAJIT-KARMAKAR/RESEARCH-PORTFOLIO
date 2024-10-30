@@ -15,7 +15,7 @@ const Navbar = () => {
 
     return ( 
         <header className="navbar">
-            <div className="navbar-text"> <h2> MANOSWITA BOSE </h2> </div>
+            <div className="navbar-text"> <h2> MANOSWITA </h2> </div>
             <nav className="navbar-links" ref={navigationRef}>
                 <a href="#"> EXPERIENCE </a>
                 <a href="#"> PUBLICATIONS </a>

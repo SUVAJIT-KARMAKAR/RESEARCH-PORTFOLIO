@@ -1,10 +1,9 @@
 // src > components > Banner > Banner.jsx 
 import React from "react";
-import HeaderImage from "../../../public/Header-image.png";
+import HeaderImage from "../../assets/Header-image.png";
 import { FaGoogleScholar } from "react-icons/fa6";
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa6";
-import { FaSquareXTwitter } from "react-icons/fa6";
 import { FaFacebookSquare } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa6";
 
@@ -22,6 +21,7 @@ const Banner = () => {
                 <p className="banner-description">
                     Hello, World!
                     <br />
+                    <br />
                     I’m Manoswita, a tech enthusiast and aspiring researcher who loves to dive into the fascinating intersections of artificial intelligence, data science, machine learning, and natural language processing. With a passion for leveraging data to address real-world challenges, my projects span predictive modeling, data visualization, recommendation systems, and so on - all aimed at creating a more supportive digital world.
                     <br />
                     <br />
@@ -29,11 +29,10 @@ const Banner = () => {
                 </p>
                 <div className="banner-links">
                     <a href="#"><FaGoogleScholar size={35}/></a>
-                    <a href="#"><FaGithub size={35}/></a>
-                    <a href="#"><FaLinkedin size={35}/></a>
-                    <a href="#"><FaSquareXTwitter size={35}/></a>
-                    <a href="#"><FaFacebookSquare size={35}/></a>
-                    <a href="#"><FaInstagram size={35}/></a>
+                    <a href="https://github.com/manoswita-bose"><FaGithub size={35}/></a>
+                    <a href="https://www.linkedin.com/in/manoswita-bose-467061244/"><FaLinkedin size={35}/></a>
+                    <a href="https://www.facebook.com/bose.manoswita.2001"><FaFacebookSquare size={35}/></a>
+                    <a href="https://www.instagram.com/bose_manoswita/?igsh=MXhvZXkxMnk2cTMxYg%3D%3D#"><FaInstagram size={35}/></a>
                 </div>
             </div>
     </div>

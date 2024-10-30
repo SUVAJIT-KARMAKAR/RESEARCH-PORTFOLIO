@@ -1,0 +1,25 @@
+/* UTILITY */
+.horizontal-rule {
+    border: none;
+    height: 5px;
+    border-radius: 2px;
+    background: linear-gradient(to right, #4a90e2, #e94e77);
+    margin: 20px auto;
+    width: 60%;
+    max-width: 600px;
+    transition: width 0.3s ease;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .horizontal-rule {
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .horizontal-rule {
+        width: 80%;
+        height: 3px; 
+    }
+}
