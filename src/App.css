@@ -1,4 +1,13 @@
 /* src > App.css */
+:root {
+    --white-background : #ffffff;
+    --primary-color : #B6C7AA;
+    --primary-button : #A0937D;
+    --secondary-button : #ffffff;
+    --primary-text : #000000;
+    --secondary-text : #4b4949;
+}
+
 * {
     padding : 0px;
     margin : 0px;
@@ -8,9 +17,10 @@
 html, body {
     width: 100%;
     height: 100%;
+    font-family :"Poppins", serif;
 }
 
-/* From Uiverse.io by kennyotsu-monochromia */ 
+/* Designed pattern background */
 .container {
     width: 100%;
     height: 100%;
