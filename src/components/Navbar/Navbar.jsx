@@ -17,10 +17,10 @@ const Navbar = () => {
         <header className="navbar">
             <div className="navbar-text"> <h2> MANOSWITA </h2> </div>
             <nav className="navbar-links" ref={navigationRef}>
-                <a href="#"> EXPERIENCE </a>
+                <a href="#experience-header"> EXPERIENCE </a>
                 <a href="#"> PUBLICATIONS </a>
                 <a href="#"> AWARDS </a>
-                <a href="#"> DOWNLOAD CV </a>
+                <a href="#" className="cv-button"> DOWNLOAD CV </a>
                 {/* Navigation close button */}
                 <button className="navbar-button navbar-close-button"onClick={showNavigationBar}>
                     <RxCrossCircled

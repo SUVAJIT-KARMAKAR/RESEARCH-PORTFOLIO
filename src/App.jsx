@@ -9,7 +9,7 @@ import Experience from "./components/Experience/Experience";
 
 const App = () => {
   return (
-    <div class="container">
+    <div class="grid">
       <Navbar/>
       <Banner/>
       <HorizontalRule/>

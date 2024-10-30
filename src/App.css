@@ -2,7 +2,7 @@
 :root {
     --white-background : #ffffff;
     --primary-color : #97b383;
-    --primary-button : #A0937D;
+    --primary-button : #93743e;
     --secondary-button : #ffffff;
     --primary-text : #000000;
     --secondary-text : #4b4949;
@@ -18,10 +18,11 @@ html, body {
     width: 100%;
     height: 100%;
     font-family :"Poppins", serif;
+    scroll-behavior: smooth;
 }
 
 /* Designed pattern background */
-.container {
+.grid {
     width: 100%;
     height: 100%;
     --color: #E1E1E1;
