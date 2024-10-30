@@ -1,7 +1,7 @@
 /* src > components > Banner > Banner.modules.css */
 .banner {
     min-height: 90vh;
-    margin: 0 auto;
+    margin: 50px auto;
     padding: 0 8%;
     display: flex;
     align-items: center;
@@ -89,6 +89,7 @@
 /* For smaller desktop screens */
 @media (max-width: 1200px) {
     .banner {
+        margin: 50px auto;
         gap: 3rem;
         padding: 0 4%;
     }
@@ -110,6 +111,7 @@
 /* For tablet screens */
 @media (max-width: 992px) {
     .banner {
+        margin-top: 50px;
         flex-direction: column;
         gap: 2rem;
         min-height: auto;
@@ -142,7 +144,7 @@
 /* For mobile screens */
 @media (max-width: 576px) {
     .banner {
-        margin-top: 20px;
+        margin-top: 75px;
         padding: 1rem 4%;
     }
 
